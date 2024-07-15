@@ -1,0 +1,325 @@
+body {
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+}
+.logo__title {
+  margin: 0;
+  font-size: 8px;
+}
+
+.header {
+  padding: 30px 115px;
+  display: flex;
+  justify-content: space-between;
+}
+.header .navbar {
+  display: flex;
+  align-items: center;
+}
+.header .navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+.header .navbar ul li {
+  margin-right: 50px;
+}
+.header .navbar ul li a {
+  color: #333;
+  text-decoration: none;
+  transition: color 333ms ease;
+  position: relative;
+}
+.header .navbar ul li a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  width: 0;
+  height: 18px;
+  border-top: 2px solid #333;
+  border-bottom: 2px solid #333;
+  transition: width 0.3s ease, left 0.3s ease;
+  transform: translateX(-50%);
+}
+.header .navbar ul li a:hover::after {
+  width: 100%;
+}
+
+.main {
+  padding: 0 115px;
+}
+.main .content_1 {
+  display: flex;
+}
+.main .content_1 .left {
+  flex: 1;
+  margin-top: 250px;
+}
+.main .content_1 .left > * {
+  margin-bottom: 100px;
+}
+.main .content_1 .left h1 {
+  margin-top: 0;
+  font-size: 64px;
+  color: #333333;
+}
+.main .content_1 .left h1 span {
+  font-weight: 100;
+  display: block;
+  color: #BDBDBD;
+}
+.main .content_1 .left .buttons {
+  font-weight: bold;
+  font-size: 32px;
+}
+.main .content_1 .left .buttons svg rect {
+  transition: fill 333ms ease;
+}
+.main .content_1 .left .buttons svg:hover rect {
+  fill: #F9F9F9;
+}
+.main .content_1 .left .slide-numbers {
+  font-size: 24px;
+  color: #BDBDBD;
+  display: flex;
+  align-items: center;
+}
+.main .content_1 .right {
+  flex: 2;
+  width: 100%;
+  height: 820px;
+  background-image: url("images/house0.png");
+  background-size: cover;
+  background-position: center;
+}
+.main .content_1 .right a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: #333;
+  text-decoration: none;
+  width: 30%;
+  height: 75px;
+  position: relative;
+  top: calc(100% - 75px);
+  transition: background-color 333ms ease;
+}
+.main .content_1 .right a svg {
+  margin-left: 10px;
+}
+.main .content_1 .right a:hover {
+  background-color: #F9F9F9;
+}
+.main .content_2 {
+  display: flex;
+  background-color: #FBFBFB;
+  margin-top: 100px;
+  padding: 20px 80px;
+}
+.main .content_2 .left {
+  width: 60%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: minmax(50px, auto);
+  align-items: center;
+  gap: 40px;
+}
+.main .content_2 .left img {
+  width: 100%;
+}
+.main .content_2 .left img[alt=house2] {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.main .content_2 .right {
+  width: 40%;
+  margin-left: 40px;
+  font-size: 24px;
+  line-height: 50px;
+}
+.main .content_2 .right h1 {
+  margin: 30px 0;
+  font-size: 96px;
+  font-weight: 300;
+  color: #BDBDBD;
+}
+.main .content_2 .right a {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: #333;
+  text-decoration: none;
+  width: 300px;
+  height: 75px;
+  transition: background-color 333ms ease;
+}
+.main .content_2 .right a svg {
+  margin-left: 10px;
+}
+.main .content_2 .right a:hover {
+  background-color: #f1f1f1;
+}
+.main .content_3 h1 {
+  font-weight: 300;
+  font-size: 64px;
+  color: #BDBDBD;
+}
+.main .content_3 > div {
+  display: flex;
+}
+.main .content_3 > div > div {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 22px;
+  color: #333333;
+}
+.main .content_3 > div > div span {
+  font-weight: 900;
+  font-size: 200px;
+  color: #F2F2F2;
+  margin-right: 20px;
+}
+.main .content_3 .left {
+  margin-right: 350px;
+}
+.main .content_4 > h1 {
+  font-weight: 300;
+  font-size: 64px;
+  color: #BDBDBD;
+}
+.main .content_4 > div > div {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+.main .content_4 > div > div > div {
+  background-image: url("images/project0.png");
+  background-size: cover;
+  background-position: center;
+  width: 40vw;
+  margin-right: 30px;
+  overflow: hidden;
+  color: #FFFFFF;
+}
+.main .content_4 > div > div > div > div {
+  background-color: rgba(51, 51, 51, 0.8);
+  width: 40vw;
+  height: 100%;
+  padding: 50px 75px;
+  background-size: cover;
+  background-position: center;
+}
+.main .content_4 > div > div > div h1 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 64px;
+}
+.main .content_4 > div > div > div p {
+  font-weight: 400;
+  font-size: 12px;
+}
+.main .content_4 > div > div > div span {
+  font-size: 18px;
+}
+.main .content_4 > div > div > img[alt=project1] {
+  width: 40vw;
+}
+.main .content_4 > div > div > img[alt=project2] {
+  width: 30vw;
+  margin-right: 30px;
+}
+.main .content_4 > div > div > img[alt=project3] {
+  width: 30vw;
+  margin-right: 30px;
+}
+.main .content_4 > div > div > img[alt=project4] {
+  width: 30vw;
+}
+.main .content_4 > div > footer {
+  display: flex;
+  justify-content: flex-end;
+}
+.main .content_5 h1 {
+  font-weight: 300;
+  font-size: 64px;
+  color: #BDBDBD;
+}
+.main .content_5 > div {
+  display: flex;
+  height: 500px;
+  justify-content: space-between;
+}
+.main .content_5 > div .registration {
+  display: flex;
+  flex-direction: column;
+}
+.main .content_5 > div .registration input {
+  background-color: #F3F3F3;
+  border: none;
+}
+.main .content_5 > div .registration input:focus {
+  border: none;
+}
+.main .content_5 > div .pic {
+  background-image: url("images/pic.png");
+  background-size: cover;
+  background-position: center;
+  width: 60vw;
+  height: 100%;
+}
+
+.footer {
+  background-color: #2C2C2C;
+  color: white;
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.footer path {
+  fill: white;
+}
+.footer .logo__title {
+  font-size: 16px;
+}
+.footer h5 {
+  margin-bottom: 30px;
+}
+.footer ul {
+  list-style-type: none;
+}
+.footer ul li {
+  margin-bottom: 30px;
+}
+.footer div:last-child ul {
+  width: 10vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=style.css.map */
